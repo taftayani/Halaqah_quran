@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+        android:fontFamily="serif"
+        android:text="NgafalYuk"
+        android:textAlignment="center"
+        android:textColor="@color/paraf"
+        android:textSize="70dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/logo"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/gradient"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/logo"
+        android:layout_toStartOf="@+id/email"
+        android:background="@color/form"
+        android:src="@drawable/mail"
+        android:layout_toLeftOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/gradient"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_alignLeft="@+id/email" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_alignTop="@+id/password"
+        android:layout_toStartOf="@+id/email"
+        android:background="@color/form"
+        android:src="@drawable/ic_security_black_24dp"
+        android:layout_toLeftOf="@+id/email" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="237dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp"
+        android:background="@color/RightColor"
+        android:text="MASUK" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:background="@color/RightColor"
+        android:text="Daftar" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="LUPA PASSWORD!"
+        android:textColor="@color/forgot"
+
+        />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="62dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="123dp"
+        android:layout_marginStart="76dp"
+        android:src="@drawable/left"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="76dp" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="64dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/left"
+        android:layout_toEndOf="@+id/forgot_pass"
+        android:src="@drawable/right"
+        android:layout_toRightOf="@+id/forgot_pass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/left"
+        android:layout_centerHorizontal="true"
+        android:text="Belum Punya Akun ?" />
+
+</RelativeLayout>

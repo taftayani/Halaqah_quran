@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/beranda"
+        android:title="beranda"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/edit_profile"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_assignment_ind_black_24dp"
+        />
+    <item
+        android:title="catatan pribadi"
+        android:id="@+id/notes_privacy"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_insert_drive_file_black_24dp"
+        />
+    <item
+        android:title="Keluar"
+        android:id="@+id/logout"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        />
+</menu>
